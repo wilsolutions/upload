@@ -109,6 +109,7 @@ class User extends AppModel {
 </code></pre>
 
 Thumbnails are not automatically created. To do so, thumbnail sizes must be defined:
+Note: if do you want to use GD instead of imagick just set the thumbnailMethod attribute in your model. Ex: 'thumbnailMethod'	=> 'php', by default it will be 'thumbnailMethod'	=> 'imagick'.
 
 <pre><code><?php
 class User extends AppModel {
